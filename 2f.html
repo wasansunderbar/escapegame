@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2층</title>
+        <style>
+            body{
+                background-color: rgb(152, 156, 110);
+            }
+            .c1{
+                top: -150px;
+    
+                position: relative;
+            }
+            .c2{
+                top: -150px;
+                left: 1100px;
+
+                position: relative;
+            }
+            .c3{
+                bottom: 1px;
+                left: 00px;
+
+                position: relative;
+            }
+        </style>
+        <script>
+
+            var key=0;
+
+            function pw1(){
+                let password1 = prompt("비밀번호를 입력해주세요");
+                if(password1==936){
+                    alert("열쇠를 얻었다");
+                    key=1;
+                }
+                else{
+                    alert("비밀번호가 틀렸습니다");
+                }
+            }
+
+            function keyopen(){
+                if(key==1){
+                    alert("문을 열었다");
+                    location.href="update.html";
+                }
+                else{
+                  
+                    alert("열리지 않는다");
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <img  src="image/door2.png" width="400px" onclick="keyopen()">
+        </div>
+
+        <img class="c1" src="image/locker.png" width="110px" onclick="alert('2X')">
+        <img class="c1" src="image/locker.png" width="110px" onclick="alert('+100')">
+        <img class="c2" src="image/locker.png" width="110px" onclick="alert('=1972')">
+        <img class="c3" src="image/box.png" width="110px" onclick="pw1()">
+        
+
+    </body>
+</html>
