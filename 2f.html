@@ -6,27 +6,40 @@
             body{
                 background-color: rgb(152, 156, 110);
             }
+            /*div{
+                border: 5px solid red;
+            }*/
             .c1{
-                top: -150px;
-    
+                left: 5px;
                 position: relative;
             }
             .c2{
-                top: -150px;
-                left: 1100px;
-
+                left: 1px;
                 position: relative;
             }
             .c3{
-                bottom: 1px;
-                left: 00px;
-
+                left: 350px;
                 position: relative;
             }
             .c4{
-                bottom:0px;
+                left: 700px;
                 position: relative;
             }
+            .c5{
+                top: 100px;
+                left: 300px;
+                position: relative;
+            }
+            .c7{
+                top: 170px;
+                left: 800px;
+                position: relative;
+            }
+            .c6{
+                left: 700px;
+                position: relative;
+            }
+           
         </style>
         <script>
 
@@ -62,16 +75,21 @@
         </script>
     </head>
     <body>
-        <div style="text-align: center;">
-            <img  src="image/door2.png" width="400px" onclick="keyopen()">
+        <div>
+           <img class="c1" src="image/locker.png" width="110px" onclick="alert('2X')">
+           <img class="c2" src="image/locker.png" width="110px" onclick="alert('+100')">
+           <img class="c3" src="image/door2.png" width="400px" onclick="keyopen()">
+           <img class="c4" src="image/locker.png" width="110px" onclick="alert('=1972')">
         </div>
 
-        <img class="c1" src="image/locker.png" width="110px" onclick="alert('2X')">
-        <img class="c1" src="image/locker.png" width="110px" onclick="alert('+100')">
-        <img class="c2" src="image/locker.png" width="110px" onclick="alert('=1972')">
-        <img class="c3" src="image/box.png" width="110px" onclick="pw1()">
-        <img class="c4" src="image/understair.png" width="110px" onclick="understair()">
-        
+        <div style="height: 300px;">
+            <img class="c5" src="image/box.png" width="110px" onclick="pw1()">
+            <img class="c7" src="image/paper.png" width="110px" onclick="alert('X는 미지수')">
+        </div>
+
+        <div>
+            <img class="c6" src="image/understair.png" width="110px" onclick="understair()">
+        </div>
 
     </body>
 </html>
