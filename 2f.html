@@ -23,6 +23,10 @@
 
                 position: relative;
             }
+            .c4{
+                bottom:0px;
+                top:-100px;
+            }
         </style>
         <script>
 
@@ -50,6 +54,11 @@
                 }
             }
 
+            function understair(){
+                alert("아래층으로 내려갔다");
+                location.href="1f.html";
+            }
+
         </script>
     </head>
     <body>
@@ -61,6 +70,7 @@
         <img class="c1" src="image/locker.png" width="110px" onclick="alert('+100')">
         <img class="c2" src="image/locker.png" width="110px" onclick="alert('=1972')">
         <img class="c3" src="image/box.png" width="110px" onclick="pw1()">
+        <img class="c4" src="image/understair.png" width="110px" onclick="understair()">
         
 
     </body>
