@@ -17,11 +17,11 @@
                 position: relative;
             }
             .c2{
-                left: 1px;
+                left: 1250px;
                 position: relative;
             }
             .c3{
-                left: 350px;
+                left: 600px;
                 position: relative;
             }
             .c4{
@@ -39,38 +39,38 @@
                 position: relative;
             }
             .c7{
-                top: 100px;
-                left: 700px;
+                top: 50px;
+                left: 400px;
                 position: relative;
             }
             .c8{
-                left: 700px;
+                top: 150px;
+                left: 900px;
+                position: relative;
+            }
+            .c9{
+                top: 200px;
+                left: 100px;
                 position: relative;
             }
         </style>
         <script>
-          function pw(){
-                let password = prompt("비밀번호를 입력해주세요");
-                if(password==20101035){
+
+            var double="double";
+
+            function left(){
+                location.href="3f.html";
+            }
+
+            function pw(){
+                let password = prompt("암호를 입력해주세요");
+                if(password==double){
                     alert("열렸습니다");
-                    location.href="update.html";
+                    alert("안에 있는 쪽지를 보니double은 실수 라고 써져있다");
                 }
                 else{
                     alert("비밀번호가 틀렸습니다");
                 }
-            }
-
-            function left(){
-                location.href="3f-left.html";
-            }
-
-            function right(){
-                location.href="3f-right.html";
-            }
-
-            function understair(){
-                alert("아래층으로 내려갔다");
-                location.href="2f.html";
             }
             
         </script>
@@ -78,23 +78,19 @@
     <body>
        
         <div>
-            <img class="c1" src="image/locker.png" width="110px" onclick="alert('포인터의 주소값은 20101027')">
-            <img class="c3" src="image/door.png" width="200px" onclick="pw()">
-            <img class="c4" src="image/locker.png" width="110px" onclick="alert('잠겨있다')">
-            <img class="c4" src="image/locker.png" width="110px" onclick="alert('잠겨있다')">
+            <img class="c1" src="image/locker.png" width="110px" onclick="alert('o')">
+            <img class="c2" src="image/locker.png" width="110px" onclick="alert('e')">
+            <img class="c3" src="image/box.png" width="110px" onclick="pw()">
          </div>
 
          <div style="height: 100px;">
             <img class="c5" src="image/left.png" width="50px" onclick="left()">
-            <img class="c6" src="image/right.png" width="50px" onclick="right()">
         </div>
 
-        <div style="height: 200px;">
-            <img class="c7" src="image/paper.png" width="50px" onclick="alert('----------->')">
-        </div>
-
-        <div>
-            <img class="c8" src="image/understair.png" width="110px" onclick="understair()">
+        <div style="height: 300px;">
+            <img class="c7" src="image/paper.png" width="50px" onclick="alert('b')">
+            <img class="c8" src="image/paper.png" width="50px" onclick="alert('l')">
+            <img class="c9" src="image/paper.png" width="50px" onclick="alert('u')">
         </div>
        
     </body>

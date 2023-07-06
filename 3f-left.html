@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>3층</title>
+        <style>
+            body{
+                background-color: rgb(152, 156, 110);
+            }
+            /*div{
+                border: 5px solid red;
+            }*/
+            h1{
+                text-align: center;
+            }
+            .c1{
+                left: 5px;
+                position: relative;
+            }
+            .c2{
+                left: 1px;
+                position: relative;
+            }
+            .c3{
+                left: 350px;
+                position: relative;
+            }
+            .c4{
+                left: 700px;
+                position: relative;
+            }
+            .c5{
+                top: 50px;
+                left: 0px;
+                position: relative;
+            }
+            .c6{
+                top: 50px;
+                left: 1400px;
+                position: relative;
+            }
+            .c7{
+                top: 50px;
+                left: 400px;
+                position: relative;
+            }
+            .c8{
+                top: 150px;
+                left: 900px;
+                position: relative;
+            }
+            .c9{
+                top: 200px;
+                left: 100px;
+                position: relative;
+            }
+        </style>
+        <script>
+
+            function right(){
+                location.href="3f.html";
+            }
+            
+        </script>
+    </head>
+    <body>
+       
+        <div>
+            <img class="c1" src="image/locker.png" width="110px" onclick="alert('d')">
+         </div>
+
+         <div style="height: 100px;">
+            <img class="c6" src="image/right.png" width="50px" onclick="right()">
+        </div>
+
+        <div style="height: 300px;">
+            <img class="c7" src="image/paper.png" width="50px" onclick="alert('정수형 포인터 주소값에 1을 더하면 주소값엔 4가 더해진다')">
+            <img class="c8" src="image/paper.png" width="50px" onclick="alert('문자형 포인터 주소값에 1을 더하면 주소값엔 1이 더해진다')">
+            <img class="c9" src="image/paper.png" width="50px" onclick="alert('실수형 포인터 주소값에 1을 더하면 주소값엔 8이 더해진다')">
+        </div>
+       
+    </body>
+</html>
