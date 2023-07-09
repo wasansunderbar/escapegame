@@ -32,13 +32,14 @@
                 location.href="4f.html";
             }
 
-            function key(){
+            function fn_key(){
                 if(key==1){
                     alert("사물함 문을 열었다");
                     alert("대걸레를 얻었다");
                     item=1;
                 }
                 else{
+                    alert(key);
                     alert("잠겨있다,사물함에 열쇠구멍이 있다");
                 }
             }
@@ -61,7 +62,7 @@
        
 
         <div>
-            <img src="image/locker.png" width="110px" onclick="key()">
+            <img src="image/locker.png" width="110px" onclick="fn_key()">
             <img src="image/locker.png" width="110px" onclick="alert('잠겨있다')">
         </div>
 
