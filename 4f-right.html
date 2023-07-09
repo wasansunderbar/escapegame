@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>4층</title>
+        <style>
+            body{
+                background-color: rgb(152, 156, 110);
+            }
+            div{
+                border: 5px solid red;
+            }
+            h1{
+                text-align: center;
+            }
+            .c5{
+                top: 50px;
+                left: 0px;
+                position: relative;
+            }
+        </style>
+        <script>
+
+            function left(){
+                location.href="4f.html";
+            }
+
+            function keyget(){
+                alert("열쇠를 얻었다");
+                key=1;
+            }
+            
+        </script>
+    </head>
+    <body>
+       
+        <div>
+            <img src="image/locker.png" width="110px" onclick="keyget()">
+            <img src="image/locker.png" width="110px" onclick="alert('잠겨있다')">
+        </div>
+
+         <div style="height: 100px;">
+            <img class="c5" src="image/left.png" width="50px" onclick="left()">
+        </div>
+
+       
+    </body>
+</html>

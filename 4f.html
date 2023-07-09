@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>4층</title>
+        <style>
+            body{
+                background-color: rgb(152, 156, 110);
+            }
+            div{
+                border: 5px solid red;
+            }
+            h1{
+                text-align: center;
+            }
+            .c1{
+                left: 650px;
+                position: relative;
+            }
+            .c2{
+                left: 0px;
+                position: relative;
+            }
+          
+            .c5{
+                top: 50px;
+                left: 0px;
+                position: relative;
+            }
+            .c6{
+                top: 50px;
+                left: 1400px;
+                position: relative;
+            }
+            .c7{
+                left: 200px;
+                position: relative;
+            }
+            .c8{
+                left: 700px;
+                position: relative;
+            }
+        </style>
+        <script>
+
+            var item=0;
+
+            function pw(){
+
+                let password = prompt("비밀번호를 입력해주세요");
+                if(password==1986){
+                    alert("열렸습니다");
+                    location.href="update.html";
+                }
+                else{
+                    alert("비밀번호가 틀렸습니다");
+                }
+            }
+
+            function item1(){
+                if(item==1){
+                    alert("대걸레로 무언갈 꺼냈다, 거기엔 []라고 써있었다");
+                }
+                else{
+                    alert("손이 닿지 않는다, 꺼낼만한 물건을 찾자");
+                }
+            }
+
+            function left(){
+                location.href="4f-left.html";
+            }
+
+            function right(){
+                location.href="4f-right.html";
+            }
+
+            function understair(){
+                alert("아래층으로 내려갔다");
+                location.href="3f.html";
+            }
+            
+        </script>
+    </head>
+    <body>
+    
+        <div>
+            <img class="c1" src="image/door.png" width="200px" onclick="pw()">
+            <img class="c2" src="image/locker2.png" width="110px" onclick="item1()">
+            </div>
+
+            <div style="height: 100px;">
+            <img class="c5" src="image/left.png" width="50px" onclick="left()">
+            <img class="c6" src="image/right.png" width="50px" onclick="right()">
+        </div>
+
+        <div style="height: 150px;">
+            <img class="c7" src="image/paper.png" width="50px" onclick="alert('종이의 개수')">
+            <img class="c1" src="image/paper.png" width="50px" onclick="alert('*10')">
+        </div>
+
+        <div>
+            <img class="c8" src="image/understair.png" width="110px" onclick="understair()">
+        </div>
+    
+    </body>
+</html>
