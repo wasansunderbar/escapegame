@@ -6,9 +6,9 @@
             body{
                 background-color: rgb(152, 156, 110);
             }
-            div{
+            /*div{
                 border: 5px solid red;
-            }
+            }*/
             h1{
                 text-align: center;
             }
@@ -40,8 +40,11 @@
                 position: relative;
             }
         </style>
+
+        <script src="js/script.js"></script>
         <script>
 
+           
             var item=0;
 
             function pw(){
@@ -57,8 +60,10 @@
             }
 
             function item1(){
-                if(item==1){
-                    alert("대걸레로 무언갈 꺼냈다, 거기엔 []라고 써있었다");
+                var sessionItemValue = getSessionStorage("item");
+                if(sessionItemValue==1){
+                    alert("대걸레로 무언갈 꺼냈다, 우리 학교 정보였다");
+                    alert("[개교:1986년 1월 9일 성별:남녀공학 형태:공립......]")
                 }
                 else{
                     alert("손이 닿지 않는다, 꺼낼만한 물건을 찾자");
@@ -93,7 +98,7 @@
         </div>
 
         <div style="height: 150px;">
-            <img class="c7" src="image/paper.png" width="50px" onclick="alert('종이의 개수')">
+            <img class="c7" src="image/paper.png" width="50px" onclick="alert('전체 종이의 개수')">
             <img class="c1" src="image/paper.png" width="50px" onclick="alert('*10')">
         </div>
 

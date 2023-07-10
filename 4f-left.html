@@ -6,15 +6,16 @@
             body{
                 background-color: rgb(152, 156, 110);
             }
-            div{
+            /*div{
                 border: 5px solid red;
-            }
+            }*/
             h1{
                 text-align: center;
             }
             .c1{
                 top: 60px;
                 left: 700px;
+
                 position: relative;
             }
             .c6{
@@ -23,10 +24,13 @@
                 position: relative;
             }
         </style>
+
+        <script src="js/script.js"></script>
         <script>
 
+
+
             var key=0;
-            var item=0;
 
             function right(){
                 location.href="4f.html";
@@ -36,7 +40,9 @@
                 if(key==1){
                     alert("사물함 문을 열었다");
                     alert("대걸레를 얻었다");
-                    item=1;
+                    //item=1;
+                    setSessionStorage("item",1);
+                
                 }
                 else{
                     alert(key);
@@ -46,15 +52,33 @@
 
             function pw(){
                 let password = prompt("비밀번호를 입력해주세요");
-                if(password==100){
-                    alert("열렸습니다");
-                    alert("국사봉중학교 개교년도 라고 써있었다");
-                }
-                else{
-                    alert("비밀번호가 틀렸습니다");
-                }
-                }
+                    if(password==100){
+                        alert("열렸습니다");
+                        alert("국사봉중 개교년도 라고 써있었다");
+                    }
+                    
+                    else{
+                        alert("비밀번호가 틀렸습니다");
+                    }
+            }
 
+            function pw2(){
+                let password = prompt("비밀번호를 입력해주세요");
+                    if(password==109){
+                        alert("열렸습니다");
+                        keyget();
+                    }
+                    
+                    else{
+                        alert("비밀번호가 틀렸습니다");
+                    }
+            }
+               
+             
+            function keyget(){
+                alert("열쇠를 얻었다");
+                key=1;
+            }
             
         </script>
     </head>
@@ -63,17 +87,17 @@
 
         <div>
             <img src="image/locker.png" width="110px" onclick="fn_key()">
-            <img src="image/locker.png" width="110px" onclick="alert('잠겨있다')">
+            <img src="image/locker.png" width="110px" onclick="pw2()">
         </div>
 
          <div style="height: 100px;">
             <img class="c6" src="image/right.png" width="50px" onclick="right()">
         </div>
 
+        
         <div style="height: 200px;">
             <img class="c1" src="image/box.png" width="110px" onclick="pw()">
         </div>
-
        
     </body>
 </html>
