@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>선택하세요!</title>
+        
+        <style>
+            body{
+                background-color: rgb(5, 156, 206);
+            }
+           /* div{
+                border: 5px solid red;
+            }*/
+            h1{
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                color:blue;
+            }
+            .c1{
+                left: 5px;
+                position: relative;
+            }
+            .c2{
+                left: 1px;
+                position: relative;
+            }
+            .c3{
+                left: 600px;
+                position: relative;
+            }
+            .c4{
+                left: 700px;
+                position: relative;
+            }
+            .c5{
+                top: 310px;
+                position: relative;
+            }
+            .c7{
+                top: 170px;
+                left: 800px;
+                position: relative;
+            }
+            .c6{
+                left: 700px;
+                position: relative;
+            }
+
+           
+        </style>
+
+        <script src="js/script.js"></script>
+        <script>
+
+            var key=0;
+
+            function pw1(){
+                let password1 = prompt("비밀번호를 입력해주세요");
+                if(password1==2999){
+                    alert("열렸습니다");
+                    location.href="4f.html";
+                }
+                else{
+                    alert("비밀번호가 틀렸습니다");
+                }
+            }
+
+            function kf21(){
+                alert("당신은 왜 학교에 전투기가 있는지는 모르겠지만 일단 전투기를 탔다");
+                alert("어떻게 할까?");
+                location.href="choose.html";
+            }
+
+            function understair(){
+                alert("계단이 무너져버렸다");
+                /*location.href="4f.html";*/
+            }
+
+        </script>
+    </head>
+    <body>
+        <br>
+        <h1>엔딩 2</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>당신은 전투기를 타지 않기로 했다</h1>
+        <h1>근데 내리자마자 전투기가 폭8해서</h1>
+        <h1>당신은 살아남았지만</h1>
+        <h1>결국 학교에 평생 같히게 돼었다</h1>
+        <br>
+        <br>
+        <h1><a href="index.html">다시하기</a></h1>
+    </body>
+</html>
